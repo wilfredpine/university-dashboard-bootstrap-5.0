@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Signin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="public/bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="public/customcss/signin.css" rel="stylesheet">
+    <!-- http://code.jquery.com/ -->
+    <script src="public/validate-js/jquery-3.6.0.min.js"></script>
+    <script src="public/validate-js/jquery.validate.js"></script>
+    <script src="public/validate-js/form.js"></script>
+  </head>
+
+  <body class="text-center">
+    
+    <main class="form-signin">
+      <form action="" method="post" id="sigin-validate">
+        <img class="mb-4" src="public/img/brand.png" alt="" width="172" height="157">
+        <h1 class="h5 mb-3 fw-normal"><strong style="color:green">University</strong><b style="color: #555"> Dashboard</b></h1>
+
+        <div class="form-group pb-2">
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <h4 class="alert-heading">Something went wrong!</h4>
+              <p></p>
+              <hr>
+              <p class="mb-0"> Invalid Username </p>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Welcome User
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+        </div>
+
+        <div class="form-group pb-2">
+          <!-- <label for="username">Username / Email</label> -->
+          <input type="text" class="form-control form-control-md" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group mb-4">
+          <!-- <label for="password">Password</label> -->
+          <input type="password" class="form-control form-control-md mb-0" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <input class="w-100 p-1 btn btn-md btn-success" type="submit" value="Sign in" name="login">
+
+        <p class="mt-5 mb-3 text-muted foot-print"> <a href="">Data Privacy</a> | <a href="">Terms & Conditions</a> | <a href="#">Maintenance Team<a> | <a href="https://confired.com">Developer</a> | &copy; 2021 </p>
+
+      </form>
+    </main>
+    
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3 toast-container" style="z-index: 5">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header bg-danger text-white">
+                <strong class="me-auto">Danger</strong>
+                <small class="text-white">...</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" style="text-align:left;">
+                Allert Message
+            </div>
+        </div>
+    </div>
+    <!-- End Toast -->
+    
+    <script src="public/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+            $(".toast").toast('show');
+        });
+    </script> 
+  </body>
+</html>

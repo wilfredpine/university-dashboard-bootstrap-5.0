@@ -1,0 +1,41 @@
+
+
+
+.breadcrumb-link{
+    color: #4aa858;
+    text-decoration: none
+}
+
+.breadcrumb-link:hover{
+    color: #32753c;
+}
+
+.color-darkgray{
+    color: rgb(83, 83, 83)
+}
+
+.card{
+    border-top: 3px solid #4aa858;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-header{
+    padding: 6px;
+    color: #19381e
+}
+
+.card-header > .card-icon{
+    border-right: 1px solid #b3b3b3;
+    padding: 8px 12px 8px 8px;
+    margin: 0;
+    color: #757575;
+}
+
+/* table */
+
+.table-responsive > table > thead, .table-responsive > table > tbody{
+    color: #444444;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,420 @@
+
+<!DOCTYPE html> 
+
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="keywords" content="">
+
+        <meta name="description" content="University Dashboard | &copy; 2021" />
+
+        <meta name="author" content="confired.com" />
+
+        <title>University Dashboard</title>
+
+        <!-- <link rel="icon" href="public/img/favicon.ico"> -->
+        
+        <!-- Bootstrap core CSS -->
+        <link href="public/bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="public/customcss/topbar.css" rel="stylesheet">
+        <link href="public/customcss/sidebar.css" rel="stylesheet">
+        <link href="public/customcss/style.css" rel="stylesheet">
+        <link href="public/customcss/skin.css" rel="stylesheet">
+        <link href="public/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- http://code.jquery.com/ -->
+        <script src="public/validate-js/jquery-3.6.0.min.js"></script>
+        <script src="public/validate-js/jquery.validate.js"></script>
+        <script src="public/validate-js/form.js"></script>
+
+
+    </head> 
+    
+    <body class="d-flex flex-column h-100">
+
+    
+        <!-- topbar --> 
+        <header class="py-2 bg-dark text-white fixed-top px-0 ">
+            <div class="container px-0 mx-3">
+
+                
+                <div class="d-flex flex-wrap align-items-center justify-content-center topbarcss">
+
+                    <!-- <button class="navbar-toggler d-md-none collapsed menutoggle" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-white"> <i class="fa fa-icon fa-bars"></i> </span>
+                    </button> -->
+                
+                    <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none logotext">
+                        <img src="public/img/brand.png" height="100px" class="topbrand" alt="UD">
+                        <span  style="color:rgb(91, 247, 91)"><b>UNIVERSITY DASHBOARD</b> STUDENT PORTAL</span>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 menu1">
+                        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+                            <ul class="dropdown-menu bg-dark text-white" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">Enrollment Status</a></li>
+                                <li><a class="dropdown-item" href="#">Academic Settings</a></li>
+                                <li><a class="dropdown-item" href="#">System Settings</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Welcome User</a>
+                            <ul class="dropdown-menu bg-dark text-white" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">My Logs</a></li>
+                                <li><a class="dropdown-item" href="#">Signout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                    <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-0 justify-content-center d-flex searchform" method="POST">
+
+                        <button class="navbar-toggler d-md-none collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="text-white"> <i class="fa fa-icon fa-bars"></i> </span>
+                        </button>
+
+                        <input type="search" name="search" class="form-control form-control-sm form-control-dark searchbar" style="font-size: 12px" placeholder="Search..." required>
+                        <input type="submit" class="btn btn-success btn-sm ms-2" style="font-size: 12px" value="Search">
+                    </form>
+                
+                    <!-- <div class="text-end me-0">
+                        <a class="btn btn-outline-light btn-sm me-1">Login</a>
+                        <a class="btn btn-success btn-sm">Sign-up</a>
+                    </div> -->
+                    
+
+                </div>
+                
+            </div>
+        </header>
+        <!-- end topbar -->
+
+        <!-- Container - Fluid -->
+        <div class="container-fluid pt-5">
+            <!-- Row -->
+            <div class="row">
+
+                
+                <!-- sidebar -->
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse align-items-stretch overflow-auto scrollbar-success">
+                    <div class="position-sticky">
+                        <div class="list-group list-group-flush border-bottom border-end scrollarea">
+                            
+                            <div class="top-active align-items-center brandside">
+                                <div class="p-2" style="text-align:center">
+                                    <img src="public/img/brand.png" height="100px" alt="MinSU">
+                                </div>
+                            </div>
+
+                            <!-- <div class="list-group-item list-group-item-action top-active py-3 lh-tight" aria-current="true">
+                            
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Juan Dela Cruz</strong>
+                                <small> 1 </small>
+                            </div>
+                            <div class="col-10 mb-1 small"><i>Instructor I</i></div>
+                            </div> -->
+
+                            <a href="index.html" class="list-group-item list-group-item-action lh-tight side-menu active">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="mb-0">
+                                        <i class="fa fa-icon fa-tachometer me-2"></i>
+                                        Dashboard
+                                    </div>
+                                    <!-- <small class="text-muted"></small> -->
+                                </div>
+                            </a>
+
+                            <a href="#" class="list-group-item list-group-item-action lh-tight side-menu" data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="false" >
+                                <div class="w-100 align-items-center justify-content-between">
+                                    <div class="mb-0">
+                                        <i class="fa fa-icon fa-list me-2"></i>
+                                        Two-level Menu
+                                        <span class="fa fa-caret-down pull-right"></span>
+                                    </div>
+                                    <!-- <small class="text-muted"></small> -->
+                                </div>
+                            </a>
+                            <div class="collapse" id="utilities-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                                    <li class="bg-dark ps-4 sub-link">
+                                        <a href="#" class="text-white "><i class="fa fa-icon fa-th-large me-1"></i> Menu</a>
+                                    </li>
+                                    <li class="bg-dark pb-2 ps-4 sub-link">
+                                        <a href="#" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Menu</a>
+                                    </li>
+
+                                    <hr style="margin:0 20px;padding:0;height:1px; border:0; border-top:1px solid #999;">
+
+                                    <li class="bg-dark ps-4 sub-link">
+                                        <a href="#" class="text-white "><i class="fa fa-icon fa-th-large me-1"></i> Menu</a>
+                                    </li>
+                                    <li class="bg-dark pb-2 ps-4 sub-link">
+                                        <a href="#" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Menu</a>
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+
+                            <a href="table.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="mb-0">
+                                        <i class="fa fa-icon fa-th me-2"></i>
+                                        Table
+                                    </div>
+                                    <!-- <small class="text-muted"></small> -->
+                                </div>
+                            </a>
+
+                            <a href="form.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="mb-0">
+                                        <i class="fa fa-icon fa-edit me-2"></i>
+                                        Form
+                                    </div>
+                                    <!-- <small class="text-muted"></small> -->
+                                </div>
+                            </a>
+
+                            <a href="login.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="mb-0">
+                                        <i class="fa fa-icon fa-key me-2"></i>
+                                        Logout
+                                    </div>
+                                    <!-- <small class="text-muted"></small> -->
+                                </div>
+                            </a>
+
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-tight bg-light">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Thursday, 22nd of July 2021</strong>
+                                    <small class="text-muted"></small>
+                                </div>
+                                <div class="col-12 mb-1 small">
+                                    <i class="fa fa-bolt"></i>  0.0005
+                                    &nbsp; <i class="fa fa-server"></i> <span class="text">  0.49 MB</span>
+                                </div>
+                            </a>
+
+                            
+                        
+                        </div>
+                    </div>
+                </nav>
+                <!-- end side bar -->
+
+                
+                <!-- Main -->
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-2 bg-white maincontent">
+
+                    <!-- BreadCrumb -->
+                    <nav aria-label="breadcrumb" class="pt-3 mb-2 bg-white border-bottom mx-2">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="" class="breadcrumb-link"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                            <li class="breadcrumb-item"> index </li>
+                        </ul>
+                    </nav>
+                    <!-- End BreadCrumb -->
+
+                    <!-- title -->
+                    <div class="justify-content-between align-items-center pt-1 pb-2 mb-3 border-bottom mx-2">
+                        <h5 class="h5 mt-3 mb-0 color-darkgray"> Dashboard <small></small></h5>
+                    </div>
+                    <!-- end title -->
+
+
+                    <!-- container-fluid -->
+                    <div class="container-fluid-xxl pb-2">
+                        <!-- col -->
+                        <div class="col-md-12 float-sm-start">
+
+                            <div class="col-md-12 float-sm-start">
+                                
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <h4 class="alert-heading">Something went wrong!</h4>
+                                    <p></p>
+                                    <hr>
+                                    <p class="mb-0"> Invalid Username </p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    Welcome User
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+
+                                <!-- Toast -->
+                                <div class="position-fixed bottom-0 end-0 p-3 toast-container" style="z-index: 5">
+                                    <div class="toast" data-autohide="false">
+                                        <div class="toast-header bg-danger text-white">
+                                            <strong class="me-auto">Danger</strong>
+                                            <small class="text-white">...</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body" style="text-align:left;">
+                                            Allert Message
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Toast -->
+
+                            </div>
+                            
+
+                            <!-- Col- -->
+                            <div class="col-md-12 float-sm-start">
+                                <div class="col-md-6 p-2 float-sm-start">
+                                    <div class="card">
+                                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                            <span class="card-icon"><i class="fa fa-line-chart"></i></span>
+                                            Line<i class="fa fa-caret-down pull-right"></i>
+                                        </div>
+                                        <div class="card-body accordion-collapse collapse show" id="collapseTable">
+                                        
+                                            <canvas id="myLineChart"></canvas>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-2 float-sm-start">
+                                    <div class="card">
+                                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                            <span class="card-icon"><i class="fa fa-bar-chart"></i></span>
+                                            Bar<i class="fa fa-caret-down pull-right"></i>
+                                        </div>
+                                        <div class="card-body accordion-collapse collapse show" id="collapseTable">
+                                        
+                                            <canvas id="myBarChart"></canvas>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Col- -->
+
+
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!-- End container-fluid -->
+
+
+
+                <!-- Footer -->
+                    <footer class="d-flex footer px-1 py-3 align-items-center mt-5 pt-5">
+                        <div class="bg-light align-items-center py-3 mb-0 px-2" style="border-top: 1px solid #cfcfcf;width: 100%; ">
+                        <p class="text-muted foot-print">&copy; 2021 | <a href="">Terms & Conditions</a> | <a href="#">Developer</a></p>
+                        </div>
+                    </footer>
+                    <!-- End Footer --> 
+                    
+
+                </main>
+                <!-- End Main -->
+
+
+            
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Container - Fluid -->
+
+        <script src="public/chart.js/chart.js"></script>
+
+
+        <script src="public/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script> 
+        <script>
+            $(document).ready(function() {
+                $(".toast").toast('show');
+            });
+        </script> 
+        
+    </body>
+</html>
+
+
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+<script>
+var ctx = document.getElementById('myLineChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
