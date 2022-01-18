@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Signup</title>
+    <!-- Bootstrap core CSS -->
+    <link href="public/bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="public/customcss/signin.css" rel="stylesheet">
+    <!-- http://code.jquery.com/ -->
+    <script src="public/validate-js/jquery-3.6.0.min.js"></script>
+    <script src="public/validate-js/jquery.validate.js"></script>
+    <script src="public/validate-js/form.js"></script>
+
+    <link href="public/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-4 align-items-center text-center left-div">
+                <img class="mb-2" src="public/img/logo.png" alt="" width="auto" height="157">
+                <h1 class="h5 mb-3 fw-normal b-logo"><strong style="color:green">University Dashboard</strong><b style="color: #555"> </b></h1>
+
+                <div class="credits">
+                    <p class="mt-5 mb-3 text-muted foot-print"> <a href="">Data Privacy</a> | <a href="">Terms & Conditions</a> | <a href="">Maintenance Team<a> | <a href="https://dev.confired.com">Developer</a> | &copy; 2021 </p>
+                </div>
+
+            </div>
+            <div class="col-md-10 mx-auto col-lg-8">
+
+                <form class="row g-3 border rounded-3 bg-light p-3" method="POST" action="register" id="sigin-validate">
+                    <div class="col-12 border-bottom">
+                        <h5 style="color: #bfb200">Create Account</h5>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            Invalid Inputs
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="Phone" class="form-label mb-0">First Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="Phone" class="form-label mb-0">Middle Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="Phone" class="form-label mb-0">Last Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="Phone" class="form-label mb-0">Name Extension</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Phone" class="form-label mb-0">Email</label>
+                        <input type="email" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Phone" class="form-label mb-0">Password</label>
+                        <input type="password" class="form-control form-control-sm mb-0" name="Phone" id="PASSWORD">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="region" class="form-label mb-0">Region *</label>
+                        <select name="region" id="region" class="form-control form-control-sm mb-0" required></select>
+                        <input type="hidden" name="region_text" id="region_text">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="province" class="form-label mb-0">Province *</label>
+                        <select name="province" id="province" class="form-control form-control-sm mb-0" required></select>
+                        <input type="hidden" name="province_text" id="province_text">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="city" class="form-label mb-0">City / Municipality *</label>
+                        <select name="city" id="city" class="form-control form-control-sm mb-0" required></select>
+                        <input type="hidden" name="city_text" id="city_text">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="barangay" class="form-label mb-0">Barangay *</label>
+                        <select name="barangay" id="barangay" class="form-control form-control-sm mb-0" required></select>
+                        <input type="hidden" name="barangay_text" id="barangay_text">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Street" class="form-label mb-0">Street</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="street" id="Street">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="Phone" class="form-label mb-0">Phone</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="YES" id="CONSENT" name="CONSENT" onchange="consent();" required>
+                            <label class="form-check-label" for="CONSENT" style="color: blue">
+                                    I agree to terms and conditions
+                                </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="w-100 p-1 btn btn-md btn-success" type="submit" id="submit" disabled="disabled" value="Sign Up" name="signin">
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 p-1 btn btn-md btn-warning" href="login.html"> Back to Login </a>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="credits2 text-center">
+                            <p class="mt-5 mb-3 text-muted foot-print"> <a href="">Data Privacy</a> | <a href="">Terms & Conditions</a> | <a href="https://mis.mindorostate-u.com/enrollment-maintence-team">Maintenance Team<a> | <a href="https://dev.confired.com">Developer</a> | &copy; 2021 </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="public/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".toast").toast('show');
+        });
+    </script>
+</body>
+
+</html>
+
+<style>
+    .credits2 {
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            padding-top: 850px;
+        }
+        .credits {
+            display: none;
+        }
+        .credits2 {
+            display: block;
+        }
+        .left-div {
+            padding-bottom: 20px;
+        }
+        .b-logo {
+            font-size: 18px
+        }
+    }
+</style>
+
+<script>
+    function consent() {
+        //CONSENT
+        var submit = document.getElementById('submit');
+        var CONSENT = document.getElementById('CONSENT');
+        if (CONSENT.checked) {
+            submit.disabled = false;
+        } else {
+            submit.disabled = true;
+        }
+    }
+</script>
+
+<script>
+    var my_handlers = {
+        // fill province
+        fill_provinces: function() {
+            //selected region
+            var region_code = $(this).val();
+
+            // set selected text to input
+            var region_text = $(this).find("option:selected").text();
+            let region_input = $('#region-text');
+            region_input.val(region_text);
+            //clear province & city & barangay input
+            $('#province-text').val('');
+            $('#city-text').val('');
+            $('#barangay-text').val('');
+
+            //province
+            let dropdown = $('#province');
+            dropdown.empty();
+            dropdown.append('<option selected="true" disabled>Choose State/Province</option>');
+            dropdown.prop('selectedIndex', 0);
+
+            //city
+            let city = $('#city');
+            city.empty();
+            city.append('<option selected="true" disabled></option>');
+            city.prop('selectedIndex', 0);
+
+            //barangay
+            let barangay = $('#barangay');
+            barangay.empty();
+            barangay.append('<option selected="true" disabled></option>');
+            barangay.prop('selectedIndex', 0);
+
+            // filter & fill
+            var url = "public/philippine-address-selector/ph-json/province.json";
+            $.getJSON(url, function(data) {
+                var result = data.filter(function(value) {
+                    return value.region_code == region_code;
+                });
+
+                result.sort(function(a, b) {
+                    return a.province_name.localeCompare(b.province_name);
+                });
+
+                $.each(result, function(key, entry) {
+                    dropdown.append($('<option></option>').attr('value', entry.province_code).text(entry.province_name));
+                })
+
+            });
+        },
+        // fill city
+        fill_cities: function() {
+            //selected province
+            var province_code = $(this).val();
+
+            // set selected text to input
+            var province_text = $(this).find("option:selected").text();
+            let province_input = $('#province-text');
+            province_input.val(province_text);
+            //clear city & barangay input
+            $('#city-text').val('');
+            $('#barangay-text').val('');
+
+            //city
+            let dropdown = $('#city');
+            dropdown.empty();
+            dropdown.append('<option selected="true" disabled>Choose city/municipality</option>');
+            dropdown.prop('selectedIndex', 0);
+
+            //barangay
+            let barangay = $('#barangay');
+            barangay.empty();
+            barangay.append('<option selected="true" disabled></option>');
+            barangay.prop('selectedIndex', 0);
+
+            // filter & fill
+            var url = "public/philippine-address-selector/ph-json/city.json";
+            $.getJSON(url, function(data) {
+                var result = data.filter(function(value) {
+                    return value.province_code == province_code;
+                });
+
+                result.sort(function(a, b) {
+                    return a.city_name.localeCompare(b.city_name);
+                });
+
+                $.each(result, function(key, entry) {
+                    dropdown.append($('<option></option>').attr('value', entry.city_code).text(entry.city_name));
+                })
+
+            });
+        },
+        // fill barangay
+        fill_barangays: function() {
+            // selected barangay
+            var city_code = $(this).val();
+
+            // set selected text to input
+            var city_text = $(this).find("option:selected").text();
+            let city_input = $('#city-text');
+            city_input.val(city_text);
+            //clear barangay input
+            $('#barangay-text').val('');
+
+            // barangay
+            let dropdown = $('#barangay');
+            dropdown.empty();
+            dropdown.append('<option selected="true" disabled>Choose barangay</option>');
+            dropdown.prop('selectedIndex', 0);
+
+            // filter & Fill
+            var url = "public/philippine-address-selector/ph-json/barangay.json";
+            $.getJSON(url, function(data) {
+                var result = data.filter(function(value) {
+                    return value.city_code == city_code;
+                });
+
+                result.sort(function(a, b) {
+                    return a.brgy_name.localeCompare(b.brgy_name);
+                });
+
+                $.each(result, function(key, entry) {
+                    dropdown.append($('<option></option>').attr('value', entry.brgy_code).text(entry.brgy_name));
+                })
+
+            });
+        },
+
+        onchange_barangay: function() {
+            // set selected text to input
+            var barangay_text = $(this).find("option:selected").text();
+            let barangay_input = $('#barangay-text');
+            barangay_input.val(barangay_text);
+        },
+
+    };
+
+
+    $(function() {
+        // events
+        $('#region').on('change', my_handlers.fill_provinces);
+        $('#province').on('change', my_handlers.fill_cities);
+        $('#city').on('change', my_handlers.fill_barangays);
+        $('#barangay').on('change', my_handlers.onchange_barangay);
+
+        // load region
+        let dropdown = $('#region');
+        dropdown.empty();
+        dropdown.append('<option selected="true" disabled>Choose Region</option>');
+        dropdown.prop('selectedIndex', 0);
+        const url = "public/philippine-address-selector/ph-json/region.json";
+        // Populate dropdown with list of regions
+        $.getJSON(url, function(data) {
+            $.each(data, function(key, entry) {
+                dropdown.append($('<option></option>').attr('value', entry.region_code).text(entry.region_name));
+            })
+        });
+
+    });
+</script>

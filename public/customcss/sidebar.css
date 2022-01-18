@@ -1,33 +1,48 @@
-
-/*
- * 
-  MIT License
-
-  Copyright (c) 2021 Wilfred V. Pine
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
+/**
+ * __________________________________________________________________
  *
+ * University Dashboard
+ * __________________________________________________________________
+ *
+ * MIT License
+ * 
+ * Copyright (c) 2020 Wilfred V. Pine
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package University Dashboard
+ * @author Wilfred V. Pine <only.master.red@gmail.com>
+ * @copyright Copyright 2020 (https://dev.confired.com)
+ * @link https://github.com/redmalmon/university-dashboard-bootstrap-5.0
+ * @license https://opensource.org/licenses/MIT MIT License
  */
 
- /* .list-group-item.active */
 
- .sidebar {
+/*
+ * Sidebar
+ */
+
+
+/* .list-group-item.active */
+
+.sidebar {
+    font-size: 14px;
     position: fixed;
     top: 0;
     /* rtl:raw:
@@ -36,47 +51,62 @@
     bottom: 0;
     /* rtl:remove */
     left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0; /* Height of navbar */
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
+    /*box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);*/
     /* overflow-y: scroll; */
-  }
-  
-  @media (max-width: 767.98px) {
-    .sidebar {
-      top: 5rem;
-    }
-  }
+    background-color: rgba(255, 255, 255, 0.562);
+    /* background-color: rgb(212, 212, 212); */
+    /*added*/
+    bottom: -20px;
+}
 
-  .top-active{
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+.top-active {
     background-color: rgb(59, 59, 59);
     color: white;
     margin-right: -1px;
-  }
+}
 
-  .top-active:hover{
+.top-active:hover {
     background-color: rgb(59, 59, 59);
     color: white;
-  }
+}
 
-  .sub-link > a{
+.sub-link>a {
     width: 100%;
     font-size: 12px;
     text-decoration: none;
-  }
+}
 
-  .side-menu{
+.side-menu {
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.562);
+    /* background-color: rgb(212, 212, 212); */
+    /*added*/
+}
 
-  }
-
-  .sub-link{
+.sub-link {
     padding-top: 5px;
     padding-left: 2px;
     margin-right: 0px;
     width: 100%
-  }
+}
 
-  .sub-link:last-child{
+.sub-link:last-child {
     padding-bottom: 10px
-  }
+}
+
+
+/* sidebar */
+
+.border-e {
+    border-right: 1px solid rgb(14, 80, 22);
+}

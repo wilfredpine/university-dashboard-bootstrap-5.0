@@ -4844,8 +4844,10 @@ textarea.form-control-lg {
   color: #fff;
   /* background-color: #0d6efd;
   border-color: #0d6efd; */
-  background-color: rgb(54, 134, 78);
-  border-color: rgb(54, 134, 78);
+  background-color: rgb(47, 119, 68);
+  border-color: rgb(48, 121, 69);
+
+  margin-left: 1px; important
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;

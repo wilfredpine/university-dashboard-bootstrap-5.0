@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="University Dashboard">
+    <meta name="description" content="University Dashboard | &copy; 2021" />
+    <meta name="author" content="Wilfred V. Pine (RED) -confired.com" />
+
+    <title>University Dashboard</title>
+    <link rel="icon" type="image/png" href="public/img/logo.png" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/customcss/topbar.css" rel="stylesheet">
+    <link href="public/customcss/sidebar.css" rel="stylesheet">
+    <link href="public/customcss/style.css" rel="stylesheet">
+    <link href="public/customcss/skin.css" rel="stylesheet">
+    <link href="public/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- http://code.jquery.com/ -->
+    <script src="public/validate-js/jquery-3.6.0.min.js"></script>
+    <script src="public/validate-js/jquery.validate.js"></script>
+    <script src="public/validate-js/form.js"></script>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+    <!-- topbar -->
+    <header class="py-2 bg-dark text-white fixed-top px-0 ">
+        <div class="container px-0 mx-3">
+
+            <div class="d-flex flex-wrap align-items-center justify-content-center topbarcss">
+
+                <!-- <button class="navbar-toggler d-md-none collapsed menutoggle" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"> <i class="fa fa-icon fa-bars"></i> </span>
+                </button> -->
+
+                <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none logotext">
+                    <img src="public/img/logo.png" height="100px" class="topbrand" alt="DA">
+                    <span style="color:#3bbf0f"><b style="color:#ffd900">UNIVERSITY DASHBOARD</b> STUDENT PORTAL</span>
+                </a>
+
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 menu1">
+                    <li><a href="#" class="nav-link px-2 text-white"> Home </a></li>
+                    <li><a href="#" class="nav-link px-2 text-white"> About </a></li>
+                    <li><a href="#" class="nav-link px-2 text-white"> Contact Us </a></li>
+                    <li>
+                        <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" class="nav-link px-2">
+                            <!-- <i class="fa fa-icon fa-info-circle"></i>  -->
+                            Bootstrap 5.0
+                        </a>
+                    </li>
+                </ul>
+
+                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-0 justify-content-center d-flex searchform" method="POST">
+
+                    <button class="navbar-toggler d-md-none collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white"> <i class="fa fa-icon fa-bars"></i> </span>
+                    </button>
+
+                    <input type="search" name="search" class="form-control form-control-sm form-control-dark searchbar" style="font-size: 12px" placeholder="Search..." required>
+                    <input type="submit" class="btn btn-success btn-sm ms-2" style="font-size: 12px" value="Search">
+                </form>
+
+                <!-- <div class="text-end me-0">
+                    <a class="btn btn-outline-light btn-sm me-1">Login</a>
+                    <a class="btn btn-success btn-sm">Sign-up</a>
+                </div> -->
+
+
+            </div>
+
+        </div>
+    </header>
+    <!-- end topbar -->
+
+    <!-- Container - Fluid -->
+    <div class="container-fluid pt-5">
+        <!-- Row -->
+        <div class="row">
+
+
+            <!-- sidebar -->
+            <!-- <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse align-items-stretch overflow-auto scrollbar-success"> -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse overflow-auto scrollbar-success border-e">
+                <div class="position-sticky">
+                    <!-- <div class="list-group list-group-flush border-bottom border-end scrollarea"> -->
+                    <div class="list-group list-group-flush border-bottom scrollarea ">
+
+                        <div class="top-active align-items-center brandside">
+                            <div class="p-2" style="text-align:center">
+                                <img src="public/img/brand.png" height="100px" alt="DA">
+                            </div>
+                        </div>
+
+                        <!-- <div class="list-group-item list-group-item-action top-active py-3 lh-tight" aria-current="true"> -->
+                        <div style="text-align:center; background-color: rgb(212, 212, 212); border-bottom: 2px solid rgb(12, 114, 56)">
+                            <div class="pt-1">
+                                <strong class="pt-2">WILFRED PINE</strong>
+                            </div>
+                            <div class="pb-1 small"><i>Developer</i>
+                            </div>
+                        </div>
+
+                        <a href="index.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-tachometer me-2"></i> Dashboard
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+
+
+                        <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#form-collapse" aria-expanded="false">
+                            <div class="w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-edit me-2"></i> Forms
+                                    <span class="fa fa-caret-down pull-right"></span>
+                                </div>
+                                <!-- <small class="text-primary">Geospatial Analytics</small> -->
+                            </div>
+                        </a>
+                        <div class="collapse" id="form-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="form.html" class="text-white "><i class="fa fa-icon fa-plus me-1"></i>
+                                        Validated Form</a>
+                                </li>
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="form2.html" class="text-white "><i class="fa fa-icon fa-plus me-1"></i>
+                                        Form Table</a>
+                                </li>
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="form_upload.html" class="text-white "><i
+                                            class="fa fa-icon fa-plus me-1"></i> Form Upload</a>
+                                </li>
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="form_advanced.html" class="text-white "><i
+                                            class="fa fa-icon fa-plus me-1"></i> Advanced Form</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="false">
+                            <div class="w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-table me-2"></i> Tables
+                                    <span class="fa fa-caret-down pull-right"></span>
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+                        <div class="collapse" id="utilities-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="table.html" class="text-white "><i class="fa fa-icon fa-list-alt me-1"></i>
+                                        Basic Table</a>
+                                </li>
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="table_data.html" class="text-white "><i
+                                            class="fa fa-icon fa-bar-chart me-1"></i> Data Table</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <a href="mail.html" class="list-group-item list-group-item-action lh-tight side-menu ">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-envelope me-2"></i> Email
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+
+                        <a href="layout.html" class="list-group-item list-group-item-action lh-tight side-menu ">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-th-list me-2"></i> Layout
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="widgets.html" class="list-group-item list-group-item-action lh-tight side-menu }">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-industry me-2"></i> Widgets
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#chart-collapse" aria-expanded="false">
+                            <div class="w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-bar-chart me-2"></i> Charts
+                                    <span class="fa fa-caret-down pull-right"></span>
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+                        <div class="collapse" id="chart-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="chartjs.html" class="text-white "><i
+                                            class="fa fa-icon fa-list-alt me-1"></i> Chart JS</a>
+                                </li>
+                                <li class="bg-dark ps-4 sub-link">
+                                    <a href="chart.html" class="text-white "><i
+                                            class="fa fa-icon fa-bar-chart me-1"></i> Chart</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <a href="elements.html" class="list-group-item list-group-item-action lh-tight side-menu active">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-laptop me-2"></i> UI Elements
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="calendar.html" class="list-group-item list-group-item-action lh-tight side-menu ">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-calendar me-2"></i> Calendar
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="filemanager.html" class="list-group-item list-group-item-action lh-tight side-menu ">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-folder me-2"></i> File Manager
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="profile.html" class="list-group-item list-group-item-action lh-tight side-menu ">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-user me-2"></i> My Profile
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="startup.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-coffee me-2"></i> Startup
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="login.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <i class="fa fa-icon fa-key me-2"></i> Logout
+                                </div>
+                                <!-- <small class="text-muted"></small> -->
+                            </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" style="border-top: 2px solid green; background-color: #dedede">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Lunes, January 3, 2022</strong>
+                                <small class="text-muted"></small>
+                            </div>
+                            <div class="col-12 mb-1 small">
+                                <i class="fa fa-bolt"></i> 0.111s &nbsp; <i class="fa fa-server"></i> <span class="text"> .000001 MB</span>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <!-- end side bar -->
+
+
+
+
+
+            <!-- Main -->
+            <!-- <main class="col-md-9 ms-sm-auto col-lg-10 px-md-2 bg-white maincontent"> -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-2 maincontent">
+
+                <!-- BreadCrumb -->
+                <nav aria-label="breadcrumb" class="pt-3 mb-2 bg-white border-bottom mx-2">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="" class="breadcrumb-link"><i class="fa fa-dashboard"></i>
+                                Dashboard</a></li>
+                        <li class="breadcrumb-item"> UI elements </li>
+                    </ul>
+                </nav>
+                <!-- End BreadCrumb -->
+
+                <!-- title -->
+                <div class="justify-content-between align-items-center pt-1 pb-2 mb-3 border-bottom mx-2">
+                    <h5 class="h5 mt-3 mb-0 color-darkgray"> UI Elements <small></small></h5>
+                </div>
+                <!-- end title -->
+
+
+                <!-- container-fluid -->
+                <div class="container-fluid-xxl pb-2">
+
+
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start">
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-map"></i></span> Alerts<i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show p-2" id="collapseTable-disable" style="height: 500px;">
+
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <h4 class="alert-heading">Something went wrong!</h4>
+                                        <p></p>
+                                        <hr>
+                                        <p class="mb-0"> Invalid Username </p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        Success
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <i class="icon fa fa-ban"></i> Danger Alert!
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                        <i class="icon fa fa-info"></i> Primary
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                        <i class="icon fa fa-check"></i> Secondary
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <i class="icon fa fa-warning"></i> Warning
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card border-top-bottom-blue">
+                                <div class="widget-box">
+                                    <div class="widget-title">
+                                        <ul class="nav nav-tabs">
+                                            <li><a data-toggle="tab" class="active" href="#tab1">Tab1</a></li>
+                                            <li><a data-toggle="tab" class="" href="#tab2">Tab2</a></li>
+                                            <li><a data-toggle="tab" class="" href="#tab3">Tab3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget-content tab-content p-3">
+                                        <div id="tab1" class="tab-pane active">
+                                            <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle
+                                                to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments
+                                                would come to an end. </p>
+                                        </div>
+                                        <div id="tab2" class="tab-pane">
+                                            <p> waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments
+                                                would come to an end. </p>
+                                        </div>
+                                        <div id="tab3" class="tab-pane">
+                                            <p>full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts
+                                                of comments would come to an end. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-map"></i></span> Collapsible Accordon<i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show p-0" id="collapseTable-disable">
+
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                                                    go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Accordion Item #2
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                                                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Accordion Item #3
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                                                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Col- -->
+
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start">
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-warning"></i></span> Progress Bar
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bullhorn"></i></span> Progress Bar
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Col- -->
+
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start">
+
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Pagination
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Button Group
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <button type="button" class="btn btn-danger">Left</button>
+                                        <button type="button" class="btn btn-warning">Middle</button>
+                                        <button type="button" class="btn btn-success">Right</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Col- -->
+
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start">
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Line
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-success btn-lg">Success</button>
+                                    <button type="button" class="btn btn-danger btn-md">Danger</button>
+                                    <button type="button" class="btn btn-warning btn-sm">Warning</button>
+                                    <button type="button" class="btn btn-info btn-mini">Info</button>
+                                    <button type="button" class="btn btn-light">Light</button>
+                                    <button type="button" class="btn btn-dark">Dark</button>
+
+                                    <button type="button" class="btn btn-link">Link</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Bar
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-md">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success btn-sm">Success</button>
+                                    <button type="button" class="btn btn-outline-danger btn-mini">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Col- -->
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start">
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Demo Modal
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+                                <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+                                    <span class="card-icon"><i class="fa fa-bar-chart"></i></span> Static backdrop
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </div>
+                                <div class="card-body accordion-collapse collapse show" id="collapseTable-disable">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Launch static backdrop modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Understood</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Col- -->
+
+
+                </div>
+                <!-- End container-fluid -->
+
+
+
+                <!-- Footer -->
+                <footer class="d-flex footer px-1 py-3 align-items-center mt-5 pt-5">
+                    <div class="bg-light align-items-center py-3 mb-0 px-2" style="border-top: 1px solid #cfcfcf;width: 100%; ">
+                        <p class="text-muted foot-print">&copy; 2021 | <a href="">Terms & Conditions</a> | <a href="#">Developer</a></p>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+
+
+            </main>
+            <!-- End Main -->
+
+
+
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- End Container - Fluid -->
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3 toast-container" style="z-index: 5">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header bg-danger text-white">
+                <strong class="me-auto">Danger</strong>
+                <small class="text-white">...</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" style="text-align:left;">
+                Allert Message
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3 toast-container" style="z-index: 5">
+        <div class="toast" data-autohide="false">
+            <div class="toast-header bg-warning text-white">
+                <strong class="me-auto">Warning</strong>
+                <small class="text-white">...</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" style="text-align:left;">
+                Allert Message
+            </div>
+        </div>
+    </div>
+    <!-- End Toast -->
+
+
+    <script src="public/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".toast").toast('show');
+        });
+    </script>
+
+</body>
+
+</html>

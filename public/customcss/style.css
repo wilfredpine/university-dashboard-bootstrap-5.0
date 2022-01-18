@@ -1,60 +1,68 @@
-
-/*
- * 
-  MIT License
-
-  Copyright (c) 2021 Wilfred V. Pine
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
+/**
+ * __________________________________________________________________
  *
+ * University Dashboard
+ * __________________________________________________________________
+ *
+ * MIT License
+ * 
+ * Copyright (c) 2020 Wilfred V. Pine
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package University Dashboard
+ * @author Wilfred V. Pine <only.master.red@gmail.com>
+ * @copyright Copyright 2020 (https://dev.confired.com)
+ * @link https://github.com/redmalmon/university-dashboard-bootstrap-5.0
+ * @license https://opensource.org/licenses/MIT MIT License
  */
- 
+
 .scrollbar-success::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #F5F5F5;
     /* border-radius: 10px;  */
 }
-    
+
 .scrollbar-success::-webkit-scrollbar {
     width: 10px;
-    background-color: #F5F5F5; 
+    background-color: #F5F5F5;
 }
-    
+
 .scrollbar-success::-webkit-scrollbar-thumb {
     /* border-radius: 10px; */
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: rgb(77, 190, 122); 
+    background-color: rgb(77, 190, 122);
 }
-    
+
 
 /* Body */
 
-body{
+body {
     /* font-size: normal */
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif
 }
 
+
 /* TOPBAR */
 
-
-.logotext{
+.logotext {
     margin-right: 15px;
     /* letter-spacing: .5px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,15 +70,16 @@ body{
     color: rgb(255, 255, 255);
 }
 
+
 /* .searchbar{
 
 } */
 
-.topbarcss{
+.topbarcss {
     margin-right: -80px;
 }
 
-.topbrand{
+.topbrand {
     display: none;
     height: 60px
 }
@@ -80,49 +89,49 @@ body{
         margin-left: -65px;
         margin-top: 3px
     } */
-    .logotext{
+    .logotext {
         margin-right: 0;
         margin-bottom: 0;
         margin-top: 10px;
     }
-    .topbarcss{
+    .topbarcss {
         padding-right: 30px;
         margin-right: 0;
     }
-    .menu1{
+    .menu1 {
         margin-top: -10px
     }
-    .searchform{
+    .searchform {
         margin-bottom: -5px;
     }
-    .topbrand{
+    .topbrand {
         display: block
     }
-    .nav > li{
+    .nav>li {
         font-size: 12px;
     }
-    .brandside{
+    .brandside {
         display: none
     }
-    .list-group{
+    .list-group {
         margin-top: 45px;
     }
-    .maincontent{
+    .maincontent {
         padding-top: 120px
     }
-    .export{
+    .export {
         display: none;
     }
-    .filter{
+    .filter {
         margin-bottom: 10px;
         padding: 0 10px 0 10px
     }
-    .toast-container{
+    .toast-container {
         left: 0;
     }
 }
 
-.divider{
+.divider {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -130,20 +139,119 @@ body{
     float: left;
 }
 
+
 /*  */
 
-.btn-mini{
+.btn-mini {
     padding: 0 2px 0 2px;
     border-radius: 0;
     font-size: 13px;
     color: #363636
 }
 
+
 /*  */
-.foot-print{
+
+.foot-print {
     text-align: center
 }
-.foot-print > a{
+
+.foot-print>a {
     color: rgb(4, 94, 146);
     text-decoration: none
-  }
+}
+
+
+/* */
+
+
+/* tab */
+
+ul.nav-tabs {
+    background-color: rgb(236, 236, 236);
+}
+
+ul.nav-tabs>li {
+    padding: 10px 0px;
+    margin-left: 0;
+}
+
+.nav-tabs>li>a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-bottom: 13px;
+    margin: 0;
+    border-right: 1px solid #dfdfdf;
+}
+
+.nav-tabs>li>a:hover {
+    color: rgb(52, 54, 54);
+    text-decoration: none;
+}
+
+.nav-tabs>li>a.active {
+    /* border-top: 3px solid #179ae6; */
+    /* padding-top: 7px; */
+    color: rgb(4, 110, 172);
+    text-decoration: none;
+    border-left: 1px solid #57bffc;
+    border-right: 1px solid #57bffc;
+    background-color: #ffffff;
+    /* padding-left: 10px; */
+}
+
+.nav-tabs>li:first-child>a.active {
+    border-left: 0;
+}
+
+
+/* folder */
+
+.folder {
+    background-color: rgb(230, 208, 86);
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+}
+
+.folder-2 {
+    background-image: url('folder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: 0px solid #bbbbbb;
+}
+
+.folder>.card-footer {
+    color: #000000;
+    text-align: center;
+}
+
+.folder-2>.card-footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+.fm-link {
+    text-decoration: none;
+}
+
+.folder-3 {
+    border-radius: 5px;
+    border: 0px solid #bbbbbb;
+}
+
+.folder-3>.card-footer {
+    color: #000000;
+    text-align: center;
+}
+
+.folder-3>.card-body {
+    background-image: url('folder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
