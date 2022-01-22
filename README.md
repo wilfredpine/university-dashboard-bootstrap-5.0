@@ -11,8 +11,14 @@ http://ud.confired.com/
 
 ## Dashboard
 
+<div style="width:auto ; height:60px">
 ![Screenshot 2022-01-22 114059](https://user-images.githubusercontent.com/53922574/150623942-1acc3f59-ed47-4f68-8643-942fc211bca8.png)
+</div>
+
+
+<div style="width:150px ; height:auto">
 ![Screenshot 2022-01-22 113703](https://user-images.githubusercontent.com/53922574/150623970-3cec3678-e707-4c1b-a61e-40274e2ac0ee.png)
+</div>
 
 ## Landing Page 1
 
