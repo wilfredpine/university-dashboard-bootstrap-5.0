@@ -1,0 +1,225 @@
+<!-- sidebar -->
+<!-- <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse align-items-stretch overflow-auto scrollbar-success"> -->
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse overflow-auto scrollbar-success border-e">
+    <div class="position-sticky">
+        <!-- <div class="list-group list-group-flush border-bottom border-end scrollarea"> -->
+        <div class="list-group list-group-flush border-bottom scrollarea ">
+
+            <div class="top-active align-items-center brandside">
+                <div class="p-2" style="text-align:center">
+                    <img src="public/img/brand.png" height="100px" alt="DA">
+                </div>
+            </div>
+
+            <!-- <div class="list-group-item list-group-item-action top-active py-3 lh-tight" aria-current="true"> -->
+            <div style="text-align:center; background-color: rgb(212, 212, 212); border-bottom: 2px solid rgb(12, 114, 56)">
+                <div class="pt-1">
+                    <strong class="pt-2">WILFRED PINE</strong>
+                </div>
+                <div class="pb-1 small"><i>Developer</i>
+                </div>
+            </div>
+
+            <a href="index.php" class="list-group-item list-group-item-action lh-tight side-menu">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-tachometer me-2"></i> Dashboard
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+
+
+            <a href="#" class="list-group-item list-group-item-action lh-tight side-menu active" data-bs-toggle="collapse" data-bs-target="#form-collapse" aria-expanded="false">
+                <div class="w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-edit me-2"></i> Forms
+                        <span class="fa fa-caret-down pull-right"></span>
+                    </div>
+                    <!-- <small class="text-primary">Geospatial Analytics</small> -->
+                </div>
+            </a>
+            <div class="collapse" id="form-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="form.php" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Validated Form</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="form2.php" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Form Table</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="form_upload.php" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Form Upload</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="form_advanced.php" class="text-white "><i class="fa fa-icon fa-plus me-1"></i> Advanced Form</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="false">
+                <div class="w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-table me-2"></i> Tables
+                        <span class="fa fa-caret-down pull-right"></span>
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+            <div class="collapse" id="utilities-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="table.php" class="text-white "><i class="fa fa-icon fa-list-alt me-1"></i> Basic Table</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="table_data.php" class="text-white "><i class="fa fa-icon fa-bar-chart me-1"></i> Data Table</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="mail.php" class="list-group-item list-group-item-action lh-tight side-menu ">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-envelope me-2"></i> Email
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+
+            <a href="layout.php" class="list-group-item list-group-item-action lh-tight side-menu ">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-th-list me-2"></i> Layout
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="widgets.php" class="list-group-item list-group-item-action lh-tight side-menu }">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-industry me-2"></i> Widgets
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#chart-collapse" aria-expanded="false">
+                <div class="w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-bar-chart me-2"></i> Charts
+                        <span class="fa fa-caret-down pull-right"></span>
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+            <div class="collapse" id="chart-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="chartjs.php" class="text-white "><i class="fa fa-icon fa-list-alt me-1"></i> Chart JS</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="chart.php" class="text-white "><i class="fa fa-icon fa-bar-chart me-1"></i> Chart</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="elements.php" class="list-group-item list-group-item-action lh-tight side-menu }">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-laptop me-2"></i> UI Elements
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="calendar.php" class="list-group-item list-group-item-action lh-tight side-menu }">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-calendar me-2"></i> Calendar
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="filemanager.php" class="list-group-item list-group-item-action lh-tight side-menu }">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-folder me-2"></i> File Manager
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action lh-tight side-menu " data-bs-toggle="collapse" data-bs-target="#landing-collapse" aria-expanded="false">
+                <div class="w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-feed me-2"></i> Landing Page
+                        <span class="fa fa-caret-down pull-right"></span>
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+            <div class="collapse" id="landing-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal medium mb-0">
+
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="landing-page.html" target="_blank" class="text-white "><i class="fa fa-icon fa-exchange me-1"></i> Landing Page 1</a>
+                    </li>
+                    <li class="bg-dark ps-4 sub-link">
+                        <a href="landing2.php" target="_blank" class="text-white "><i class="fa fa-icon fa-flag me-1"></i> Landing Page 2</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="profile.php" class="list-group-item list-group-item-action lh-tight side-menu ">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-user me-2"></i> My Profile
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="startup.php" class="list-group-item list-group-item-action lh-tight side-menu">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-coffee me-2"></i> Startup
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="login.html" class="list-group-item list-group-item-action lh-tight side-menu">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <div class="mb-0">
+                        <i class="fa fa-icon fa-key me-2"></i> Logout
+                    </div>
+                    <!-- <small class="text-muted"></small> -->
+                </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" style="border-top: 2px solid green; background-color: #dedede">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Lunes, January 3, 2022</strong>
+                    <small class="text-muted"></small>
+                </div>
+                <div class="col-12 mb-1 small">
+                    <i class="fa fa-bolt"></i> 0.111s &nbsp; <i class="fa fa-server"></i> <span class="text"> .000001 MB</span>
+                </div>
+            </a>
+
+
+
+        </div>
+    </div>
+</nav>
+<!-- end side bar -->

@@ -1,0 +1,142 @@
+.bg-green {
+    background-color: #3a5329;
+}
+
+header>.topbar-landing {
+    margin-left: 200px;
+    padding-right: 250px;
+}
+
+.menu-top {
+    line-height: 15px;
+}
+
+.menu-top>i {
+    font-size: 18px;
+    margin-bottom: -15px;
+}
+
+.menu-top>span {
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.bar-top {
+    /* display: block; */
+    margin-left: 45px;
+}
+
+.bar-top>li>a {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.landing-search {
+    margin-left: 25px;
+}
+
+.landing-container {
+    padding: 100px 150px 0 150px;
+    margin-bottom: 0;
+}
+
+.logo-mini {
+    display: none;
+}
+
+.auth {
+    margin-right: 40px;
+}
+
+.auth>div.auth-btn {
+    float: left;
+}
+
+.auth>div.auth-profile {
+    float: right;
+}
+
+@media (max-width: 767.98px) {
+    header>.topbar-landing {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    .logo-max {
+        display: none;
+    }
+    .logo-mini {
+        display: block;
+    }
+    #MenuTop {
+        display: none;
+    }
+    .bar-top {
+        /* display: none; */
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 5px;
+        border-top: 1px solid #c9cac8;
+    }
+    .bar-top>li {
+        width: 100%;
+    }
+    .bar-top>li>a {
+        text-align: left;
+        padding: 8px 2px
+    }
+    .bar-top>li>a>i,
+    .bar-top>li>a>span {
+        font-size: 14px;
+    }
+    .bar-top>li>a>br {
+        display: none;
+    }
+    .landing-search {
+        margin-left: 0;
+    }
+    .auth {
+        /* display: none; */
+        border-top: 1px solid #c5c1c1;
+        margin: 0 0 0 5px;
+        padding: none;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    /* .auth>div.auth-profile {
+        float: left;
+    } */
+    .auth>div.auth-profile {
+        float: none;
+        margin-top: 5px;
+    }
+    .auth>div.auth-btn {
+        float: none;
+        width: 100%;
+    }
+    .auth>div.auth-btn>a {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .landing-container {
+        padding: 205px 0px 0 0px;
+        margin-bottom: 0;
+    }
+    .dp-home {
+        display: none;
+    }
+    .post-home>div>div>button {
+        line-height: normal;
+    }
+    .interaction>span {
+        display: none;
+    }
+}
+
+
+/* Content */
+
+.profile-timeline {
+    text-align: center;
+}

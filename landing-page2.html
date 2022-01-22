@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="University Dashboard">
+    <meta name="description" content="University Dashboard | &copy; 2021" />
+    <meta name="author" content="Wilfred V. Pine (RED) -confired.com" />
+
+    <title>University Dashboard</title>
+    <link rel="icon" type="image/png" href="public/img/logo.png" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/customcss/topbar.css" rel="stylesheet">
+    <link href="public/customcss/sidebar.css" rel="stylesheet">
+    <link href="public/customcss/style.css" rel="stylesheet">
+    <link href="public/customcss/skin.css" rel="stylesheet">
+    <link href="public/customcss/landing.css" rel="stylesheet">
+    <link href="public/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- http://code.jquery.com/ -->
+    <script src="public/validate-js/jquery-3.6.0.min.js"></script>
+    <script src="public/validate-js/jquery.validate.js"></script>
+    <script src="public/validate-js/form.js"></script>
+
+</head>
+
+<script>
+    function openNav() {
+
+        var menu = document.getElementById("MenuTop");
+        if (menu.style.display === "none")
+            menu.style.display = "block";
+        else
+            menu.style.display = "none";
+
+        //console.log("clicked")
+    }
+</script>
+
+<body class="d-flex flex-column h-100">
+
+
+    <!-- topbar -->
+    <!-- topbar -->
+    <header class="py-2 bg-green text-white fixed-top px-0">
+        <div class="container topbar-landing">
+
+            <div class="d-flex flex-wrap align-items-center justify-content-center topbarcss">
+
+
+                <a href="" class="align-items-center text-white text-decoration-none logotext logo-max">
+                    <img src="public/img/logo.png" height="50px" class="" alt="DA" style=" float:left">
+                    <span style="color:#3bbf0f; float:left" class="ms-2 pt-2"><b
+                            style="color:#ffd900; font-size: 24px;">UD</b></span>
+                </a>
+
+                <a href="" class="align-items-center mb-2 mb-lg-0 text-white text-decoration-none logotext logo-mini pb-2 px-0 mx-0">
+                    <img src="public/img/logo.png" height="40px" class="" alt="DA">
+                    <span style="color:#3bbf0f; font-size: 22px" class="ms-1 border-bottom pb-2"><b
+                            style="color:#ffd900; ">University
+                        </b>Dashboard</span>
+                </a>
+
+
+                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-0 justify-content-center d-flex searchform landing-search" method="POST">
+
+                    <span class="navbar-toggler d-md-none collapsed" onclick="openNav()">
+                        <span class="text-white"> <i class="fa fa-icon fa-bars"></i> </span>
+                    </span>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Search Here">
+                        <button type="submit" class="input-group-text btn-success"><i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                </form>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0 menu1 bar-top" id="MenuTop">
+                    <li>
+                        <a href="landing-page.html" class="nav-link text-white menu-top"> <i class="fa fa-home"></i>
+                            <br>
+                            <span>Home</span> </a>
+                    </li>
+                    <li>
+                        <a href="landing-page2.html" class="nav-link text-white menu-top"> <i class="fa fa-info"></i>
+                            <br>
+                            <span>About</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white menu-top"> <i class="fa fa-phone"></i>
+                            <br>
+                            <span>Contact Us</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white menu-top" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-user"></i>
+                            <br>
+                            <span>Pages</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="index.php">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="landing2.php">Landing Page 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="nav-link text-white menu-top"> <i class="fa fa-globe"></i>
+                            <br>
+                            <span>Bootstrap 5.0</span> </a>
+                    </li>
+                    <!-- <li><a class="btn btn-outline-light btn-sm me-1 mt-1">Login</a></li>
+                    <li><a class="btn btn-success btn-sm mt-1">Sign-up</a></li> -->
+                </ul>
+
+                <div class="auth">
+                    <!-- <div class="mt-2 auth-btn">
+                        <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+                        <a href="register.html" class="btn btn-warning btn-sm">Sign-up</a>
+                    </div> -->
+                    <div class="p-1 auth-profile">
+                        <a href="#" style="text-decoration: none;color: white" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false"> <img src="public/img/user.png" height="40px" alt=""> Juan dela Cruz
+                        </a>
+                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="">Timeline</a></li>
+                            <li><a class="dropdown-item" href="">Settings</a></li>
+                            <li><a class="dropdown-item" href="">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </header>
+    <!-- end topbar -->
+    <!-- end topbar -->
+
+    <!-- Container - Fluid -->
+    <div class="container-fluid landing-container">
+        <!-- Row -->
+        <div class="row">
+
+
+
+            <!-- Main -->
+            <!-- <main class="col-md-9 ms-sm-auto col-lg-10 px-md-2 bg-white maincontent"> -->
+            <main class="col-md-12 ms-lg-auto">
+
+
+                <!-- container-fluid -->
+                <div class="container-fluid-xxl">
+
+                    <!-- Col- -->
+                    <div class="col-md-12 float-sm-start px-3">
+
+                        <div class="col-md-3 p-2 float-sm-start">
+                            <div class="">
+                                <div class="border">
+                                    <div style="border-bottom: 1px solid green">
+                                        <div style="background-color: #003300; padding-top: 30px;height: 80px">
+
+                                        </div>
+                                        <div style="margin-top: -50px; text-align:center; ">
+                                            <img src="public/img/male_user.png" height="100px" style="border: 1px solid #fff; border-radius: 50%" alt="">
+                                        </div>
+                                        <!--username-dt end-->
+                                        <div style="color:#000; text-align: center; " class="pb-3">
+                                            <h3>John Doe</h3>
+                                            <span>Graphic Designer at Self Employed</span>
+                                        </div>
+                                    </div>
+                                    <!--user-profile end-->
+                                    <ul class="list-group text-center">
+                                        <li class="list-group-item border-bottom" style="border: none;">
+                                            <h5>Following</h5>
+                                            <span>34</span>
+                                        </li>
+                                        <li class="list-group-item border-bottom" style="border: none;">
+                                            <h5>Followers</h5>
+                                            <span>155</span>
+                                        </li>
+                                        <li class="list-group-item" style="border: none;">
+                                            <a href="my-profile.html" title="">View Profile</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="pt-3">
+                                <div style="border: 1px solid #d6d6d6;">
+                                    <div class="my-3 p-3 bg-body rounded">
+                                        <h5 class="border-bottom pb-2 mb-0">Suggestions</h5>
+                                        <div class="d-flex text-muted pt-3">
+
+                                            <img src="public/img/user.png" width="35" height="35" alt="" class="me-2 rounded">
+                                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong class="text-gray-dark">Full Name</strong>
+                                                    <a href="#">Follow</a>
+                                                </div>
+                                                <span class="d-block">@username</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex text-muted pt-3">
+                                            <img src="public/img/user.png" width="35" height="35" alt="" class="me-2 rounded">
+                                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong class="text-gray-dark">Full Name</strong>
+                                                    <a href="#">Follow</a>
+                                                </div>
+                                                <span class="d-block">@username</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex text-muted pt-3">
+                                            <img src="public/img/user.png" width="35" height="35" alt="" class="me-2 rounded">
+                                            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                                <div class="d-flex justify-content-between">
+                                                    <strong class="text-gray-dark">Full Name</strong>
+                                                    <a href="#">Follow</a>
+                                                </div>
+                                                <span class="d-block">@username</span>
+                                            </div>
+                                        </div>
+                                        <small class="d-block text-end mt-3">
+                                            <a href="#">All suggestions</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 p-2 float-sm-start">
+                            <div class="card">
+
+                                <div class="card-body pt-3 pb-2 post-home">
+                                    <div class="me-3 dp-home" style="float:left">
+                                        <img src="public/img/male_user.png" height="50px" alt="" style="border: 1px solid #fff; border-radius: 50%">
+                                    </div>
+                                    <div class="pt-1">
+
+                                        <div class="btn-group pull-right" role="group" aria-label="Basic mixed styles example" style="">
+                                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ModalAnnouncement">Post
+                                                Announcement</button>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalProject">Post a
+                                                Project</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal Announcement -->
+                                    <div class="modal fade" id="ModalAnnouncement" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Announcements</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Category" class="form-label">Category*</label>
+                                                            <select class="form-control form-control-sm" name="Category" id="Category" data-toggle="tooltip" data-placement="right" title="Category" required>
+                                                                <option value="Private">Private</option>
+                                                                <option value="Public">Public</option>
+                                                            </select>
+                                                            <small class="form-text text-muted">
+                                                                Private or Public
+                                                            </small>
+                                                        </div>
+
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Title" class="form-label">Title*</label>
+                                                            <input type="text" class="form-control form-control-sm" name="Title" id="Title" placeholder="" maxlength="255" size="255" data-toggle="tooltip" data-placement="right" title="Title" required>
+                                                            <small class="form-text text-muted">
+                                                                Title
+                                                            </small>
+                                                        </div>
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Description" class="form-label">Description
+                                                                *</label>
+                                                            <textarea name="Description" id="" class="form-control form-control-sm" cols="30" rows="5"></textarea>
+                                                            <small class="form-text text-muted">
+                                                                Description
+                                                            </small>
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal Project -->
+                                    <div class="modal fade" id="ModalProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Project</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" method="post">
+
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Category" class="form-label">Category*</label>
+                                                            <select class="form-control form-control-sm" name="Category" id="Category" data-toggle="tooltip" data-placement="right" title="Category" required>
+                                                                <option value="Private">Private</option>
+                                                                <option value="Public">Public</option>
+                                                            </select>
+                                                            <small class="form-text text-muted">
+                                                                Private or Public
+                                                            </small>
+                                                        </div>
+
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Title" class="form-label">Title*</label>
+                                                            <input type="text" class="form-control form-control-sm" name="Title" id="Title" placeholder="" maxlength="255" size="255" data-toggle="tooltip" data-placement="right" title="Title" required>
+                                                            <small class="form-text text-muted">
+                                                                Title
+                                                            </small>
+                                                        </div>
+                                                        <div class="col-md-12 mb-2">
+                                                            <label for="Description" class="form-label">Description
+                                                                *</label>
+                                                            <textarea name="Description" id="" class="form-control form-control-sm" cols="30" rows="5"></textarea>
+                                                            <small class="form-text text-muted">
+                                                                Description
+                                                            </small>
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="border mt-3 px-3">
+                                <div class="py-3">
+                                    <div class="">
+                                        <img src="public/img/user.png" height="50px" alt="" style="float:left;border: 1px solid #fff; border-radius: 50%">
+                                        <div class="" style="">
+                                            <h3 class="mb-0">Juan Dela Cruz</h3>
+                                            <span class="text-mute mt-0"> <i class="fa fa-clock-o"></i> 30 mins
+                                                ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <a href="#" title="" class=""><i class=""></i>Lorem ipsum</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. A erat nam at lectus urna
+                                            duis convallis. Amet mattis vulputate enim nulla aliquet. Quam pellentesque nec nam aliquam sem et. Congue quisque egestas diam in arcu cursus euismod. Elementum sagittis vitae et leo duis ut diam quam.</p>
+                                        <div class="border-top pt-2">
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-heart-o"></i> <span>Likes</span> 500</a>
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-comments ms-3"></i> <span>Comments</span> 500</a>
+
+                                            <a href="" class="pull-right interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-eye "></i> <span>Views</span> 500</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border mt-3 px-3">
+                                <div class="py-3">
+                                    <div class="">
+                                        <img src="public/img/user.png" height="50px" alt="" style="float:left;border: 1px solid #fff; border-radius: 50%">
+                                        <div class="" style="">
+                                            <h3 class="mb-0">Juan Dela Cruz</h3>
+                                            <span class="text-mute mt-0"> <i class="fa fa-clock-o"></i> 30 mins
+                                                ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <a href="#" title="" class=""><i class=""></i>Lorem ipsum</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. A erat nam at lectus urna
+                                            duis convallis. Amet mattis vulputate enim nulla aliquet. Quam pellentesque nec nam aliquam sem et. Congue quisque egestas diam in arcu cursus euismod. Elementum sagittis vitae et leo duis ut diam quam.</p>
+                                        <div class="border-top pt-2">
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-heart-o"></i> <span>Likes</span> 500</a>
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-comments ms-3"></i> <span>Comments</span> 500</a>
+
+                                            <a href="" class="pull-right interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-eye "></i> <span>Views</span> 500</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border mt-3 px-3">
+                                <div class="py-3">
+                                    <div class="">
+                                        <img src="public/img/user.png" height="50px" alt="" style="float:left;border: 1px solid #fff; border-radius: 50%">
+                                        <div class="" style="">
+                                            <h3 class="mb-0">Juan Dela Cruz</h3>
+                                            <span class="text-mute mt-0"> <i class="fa fa-clock-o"></i> 30 mins
+                                                ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <a href="#" title="" class=""><i class=""></i>Lorem ipsum</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. A erat nam at lectus urna
+                                            duis convallis. Amet mattis vulputate enim nulla aliquet. Quam pellentesque nec nam aliquam sem et. Congue quisque egestas diam in arcu cursus euismod. Elementum sagittis vitae et leo duis ut diam quam.</p>
+                                        <div class="border-top pt-2">
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-heart-o"></i> <span>Likes</span> 500</a>
+                                            <a href="" class="interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-comments ms-3"></i> <span>Comments</span> 500</a>
+
+                                            <a href="" class="pull-right interaction" style="text-decoration: none;"><i
+                                                    class="fa fa-eye "></i> <span>Views</span> 500</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 p-2 float-sm-start">
+                            <div class="border p-3">
+                                <div style="width: 100%; text-align: center"><img src="public/img/brand.png" width="40%" alt="" class="mb-2"></div>
+                                <div class="text-center">
+                                    <h5>Join to our Community</h5><small>Pay only for the Hours worked</small>
+                                </div>
+
+                                <hr>
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-danger">Login</button>
+                                    <button type="button" class="btn btn-outline-success">Sign Up</button>
+                                </div>
+
+                            </div>
+                            <div class="border mt-3 px-3">
+                                <div class="">
+                                    <div class="">
+                                        <div class="pt-4">
+                                            <h5><i class="fa fa-link"></i> Links</h5>
+                                        </div>
+                                    </div>
+                                    <div class="border-top">
+
+                                        <ul class="">
+                                            <li><a href="#" title="">Edit Post</a></li>
+                                            <li><a href="#" title="">Unsaved</a></li>
+                                            <li><a href="#" title="">Unbid</a></li>
+                                            <li><a href="#" title="">Close</a></li>
+                                            <li><a href="#" title="">Hide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End container-fluid -->
+
+
+
+                <!-- Footer -->
+                <footer class="d-flex footer px-1 py-3 align-items-center mt-5 pt-5">
+                    <div class="bg-light align-items-center py-3 mb-0 px-2" style="border-top: 1px solid #cfcfcf;width: 100%; ">
+                        <p class="text-muted foot-print">&copy; 2021 | <a href="">Terms & Conditions</a> | <a href="#">Developer</a></p>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+
+
+            </main>
+            <!-- End Main -->
+
+
+
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- End Container - Fluid -->
+
+
+    <script src="public/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".toast").toast('show');
+        });
+    </script>
+
+</body>
+
+</html>

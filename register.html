@@ -40,36 +40,43 @@
                         <h5 style="color: #bfb200">Create Account</h5>
                     </div>
 
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             Invalid Inputs
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-md-12">
-                        <label for="Phone" class="form-label mb-0">First Name</label>
-                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <label for="fname" class="form-label mb-0">First Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="fname" id="fname" required>
                     </div>
                     <div class="col-md-5">
-                        <label for="Phone" class="form-label mb-0">Middle Name</label>
-                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <label for="mname" class="form-label mb-0">Middle Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="mname" id="mname">
                     </div>
                     <div class="col-md-5">
-                        <label for="Phone" class="form-label mb-0">Last Name</label>
-                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <label for="lname" class="form-label mb-0">Last Name</label>
+                        <input type="text" class="form-control form-control-sm mb-0" name="lname" id="lname" required>
                     </div>
                     <div class="col-md-2">
-                        <label for="Phone" class="form-label mb-0">Name Extension</label>
-                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <label for="nameex" class="form-label mb-0">Name Ext.</label>
+                        <select name="nameex" id="nameex" class="form-control form-control-sm mb-0">
+                            <option></option>
+                            <option>Jr.</option>
+                            <option>Sr.</option>
+                            <option>I</option>
+                            <option>II</option>
+                            <option>III</option>
+                        </select>
                     </div>
                     <div class="col-md-6">
-                        <label for="Phone" class="form-label mb-0">Email</label>
-                        <input type="email" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <label for="email" class="form-label mb-0">Email</label>
+                        <input type="email" class="form-control form-control-sm mb-0" name="email" id="email" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="Phone" class="form-label mb-0">Password</label>
-                        <input type="password" class="form-control form-control-sm mb-0" name="Phone" id="PASSWORD">
+                        <label for="PASSWORD" class="form-label mb-0">Password</label>
+                        <input type="password" class="form-control form-control-sm mb-0" name="PASSWORD" id="PASSWORD" required>
                     </div>
 
                     <div class="col-md-6">
@@ -99,7 +106,7 @@
 
                     <div class="col-md-6">
                         <label for="Phone" class="form-label mb-0">Phone</label>
-                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone">
+                        <input type="text" class="form-control form-control-sm mb-0" name="Phone" id="Phone" required>
                     </div>
 
                     <div class="col-12">
