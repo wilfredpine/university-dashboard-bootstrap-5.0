@@ -212,7 +212,7 @@
 
 
                                         <!-- pagination -->
-                                        <nav class="mt-2 ml-2 mb-0">
+                                        <nav class="mt-2 ml-2 mb-0 ms-1">
                                             <ul class="pagination pagination-sm">
                                                 <li class="page-item disabled">
                                                     <a class="page-link" href="#" tabindex="-1"
