@@ -70,7 +70,8 @@
                                     <div class="table-responsive m-3">
 
                                         <!-- Table -->
-                                        <table id="example1" class="table table-bordered table-striped table-sm">
+                                        <table id="example2"
+                                            class="table table-bordered table-hover table-striped table-sm">
 
                                             <thead>
                                                 <tr>
@@ -699,8 +700,7 @@
             "Filter": false,
             "Sort": true,
             "Info": true,
-            "AutoWidth": false,
-            "Button": true
+            "AutoWidth": false
         });
     });
     </script>
@@ -708,13 +708,21 @@
     <style>
     .dataTables_paginate>ul.pagination>li>a {
         padding: 5px;
-        background-color: green;
+        background-color: #066CFB;
         color: #fff;
         margin: 0px;
         text-decoration: none;
     }
 
     .dataTables_paginate>ul.pagination>li>a:hover {
-        background-color: darkgreen;
+        background-color: #0760DC;
+    }
+
+    .dataTables_paginate>ul.pagination>li:first-child>a {
+        border-radius: 5px 0px 0px 5px
+    }
+
+    .dataTables_paginate>ul.pagination>li:last-child>a {
+        border-radius: 0px 5px 5px 0px
     }
     </style>
