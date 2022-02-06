@@ -32,3 +32,26 @@
  * @link https://github.com/redmalmon/university-dashboard-bootstrap-5.0
  * @license https://opensource.org/licenses/MIT MIT License
  */
+
+.topbarcss>ul.social-links {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-right: -90px;
+    display: block;
+}
+
+.topbarcss>ul.social-links>a {
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+@media (max-width: 767.98px) {
+    .topbarcss>ul.social-links {
+        margin: 0;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-right: 0px;
+        display: none;
+    }
+}
