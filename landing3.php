@@ -1,7 +1,7 @@
 <?php 
-require_once("templates/header.php");
-require_once("templates/navbar.php");
-require_once("templates/secondary_navbar.php");
+require_once("landing/header.php");
+require_once("landing/navbar.php");
+require_once("landing/secondary_navbar.php");
 ?>
 
 <!-- Main -->
@@ -217,5 +217,5 @@ require_once("templates/secondary_navbar.php");
 </main>
 
 <?php 
-require_once("templates/footer.php");
+require_once("landing/footer.php");
 ?>
