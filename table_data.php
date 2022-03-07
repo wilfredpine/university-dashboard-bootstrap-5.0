@@ -67,7 +67,7 @@
                                 <div class="card-body accordion-collapse collapse show p-0" id="collapseTable">
 
                                     <!-- Table Div -->
-                                    <div class="table-responsive m-3">
+                                    <div class="table-responsive2 m-3">
 
                                         <!-- Table -->
                                         <table id="example2"
@@ -683,6 +683,7 @@
 
     <?php require_once("includes/footer.html"); ?>
 
+
     <!-- DATA TABES SCRIPT -->
     <script src="public/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
     <!-- <script src="public/plugins/DataTables-1.11.4/js/jquery.dataTables.js" type="text/javascript"></script> -->
@@ -690,12 +691,15 @@
     <script src="public/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
     <!-- <script src="public/plugins/DataTables-1.11.4/js/dataTables.bootstrap.js" type="text/javascript"></script> -->
 
+
     <!-- page script -->
     <script type="text/javascript">
     $(function() {
         $("#example1").dataTable();
         $('#example2').dataTable({
             "Paginate": true,
+            //"pagingType": "full_numbers",
+            "pagingType": "simple",
             "LengthChange": false,
             "Filter": false,
             "Sort": true,

@@ -50,7 +50,7 @@
 
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             <i class="icon fa fa-download"></i>
-                            <a href="https://github.com/redmalmon/university-dashboard-bootstrap-5.0">Download on
+                            <a href="https://github.com/wilfredpine/university-dashboard-bootstrap-5.0">Download on
                                 Github!</a>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
@@ -58,7 +58,7 @@
                     </div>
 
                     <!-- Widgets -->
-                    <div class="row g-4 py-0 px-2 pb-3 row-cols-12 row-cols-lg-12 me-1">
+                    <div class="row g-4 py-0 px-2 pb-3 row-cols-12 row-cols-lg-12 ">
                         <div class="feature col">
                             <div class="overflow-hidden rounded-2 shadow-sm border border-solid border-gray p-0">
                                 <div class="feature-icon bg-success bg-gradient m-0" style="height: 0px">
