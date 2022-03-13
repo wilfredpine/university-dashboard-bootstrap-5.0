@@ -31,19 +31,6 @@
 
 </head>
 
-<script>
-    function openNav() {
-
-        var menu = document.getElementById("MenuTop");
-        if (menu.style.display === "none")
-            menu.style.display = "block";
-        else
-            menu.style.display = "none";
-
-        //console.log("clicked")
-    }
-</script>
-
 <body class="d-flex flex-column h-100">
 
 
@@ -71,7 +58,7 @@
 
                 <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-0 justify-content-center d-flex searchform landing-search" method="POST">
 
-                    <span class="navbar-toggler d-md-none collapsed" onclick="openNav()">
+                    <span class="navbar-toggler d-md-none" onclick="openNav()">
                         <span class="text-white"> <i class="fa fa-icon fa-bars"></i> </span>
                     </span>
 
@@ -83,7 +70,7 @@
 
                 </form>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0 menu1 bar-top" id="MenuTop">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0 menu1 bar-top landing-page-menu" id="MenuTop">
                     <li>
                         <a href="landing-page.html" class="nav-link text-white menu-top"> <i class="fa fa-home"></i>
                             <br>
@@ -505,6 +492,25 @@
         $(document).ready(function() {
             $(".toast").toast('show');
         });
+    </script>
+
+    <script>
+        //landing-page-menu
+        var menu = document.getElementById("MenuTop");
+        if (window.screen.availWidth < 768) {
+            menu.style.display = "none";
+        }
+
+        function openNav() {
+
+            if (menu.style.display == "none")
+                menu.style.display = "block";
+            else
+                menu.style.display = "none";
+
+
+            console.log("clicked")
+        }
     </script>
 
 </body>
