@@ -57,9 +57,10 @@ header>.topbar-landing {
     float: right;
 }
 
-#MenuTop {
+
+/* #MenuTop {
     display: block;
-}
+} */
 
 @media (max-width: 767.98px) {
     /* .landing-page-menu {
